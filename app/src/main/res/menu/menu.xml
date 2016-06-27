@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.memostenes.mascotas="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/estrella"
+        android:icon="@drawable/estrella"
+        android:title="Favoritas"
+        com.memostenes.mascotas:showAsAction="ifRoom|withText"
+        >
+
+
+    </item>
+</menu>
