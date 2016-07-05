@@ -3,12 +3,15 @@
     xmlns:com.memostenes.mascotas="http://schemas.android.com/apk/res-auto"
     >
     <item
-        android:id="@+id/estrella"
-        android:icon="@drawable/estrella"
-        android:title="Favoritas"
-        com.memostenes.mascotas:showAsAction="ifRoom|withText"
+        android:id="@+id/mContacto"
+        android:title="@string/mContacto"
+        android:orderInCategory="100"
         >
-
-
+    </item>
+    <item
+        android:id="@+id/mAcerca"
+        android:title="@string/mAcerca"
+        android:orderInCategory="101"
+        >
     </item>
 </menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context="com.memostenes.mascotas.Contacto">
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"></include>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/miActionBar"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tiCorreo"
+            android:layout_below="@+id/dpFecha"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilCorreo"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tiNombre"
+            android:layout_below="@+id/dpFecha"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilNombre"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tiMensaje"
+            android:layout_below="@+id/tilCorreo"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSend"
+        android:text="Enviar comentario"
+        android:layout_below="@+id/tilMensaje"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

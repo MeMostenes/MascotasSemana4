@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Mascotas</string>
     <string name="pnombre">Beee-to</string>
+    <string name="mContacto">Contacto</string>
+    <string name="mAcerca">Acerca de</string>
+    <string name="tvNombreCto">MeMo Serrano</string>
+    <string name="tvCiudadCto">Pátzcuaro</string>
+    <string name="tvCorreoCto">memo.serrano.82@gmail.com</string>
+    <string name="tiMensaje">Mensaje:</string>
+    <string name="tiNombre">Nombre:</string>
+    <string name="tiCorreo">Correo:</string>
+    <string name="btnEnviar">Enviar Comentario</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

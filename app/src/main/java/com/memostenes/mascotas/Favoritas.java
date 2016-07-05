@@ -5,7 +5,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
+
+import com.memostenes.mascotas.adapter.MascotaAdaptador;
+import com.memostenes.mascotas.pojo.Mascota;
 
 import java.util.ArrayList;
 
@@ -17,10 +21,16 @@ public class Favoritas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favoritas);
 
+        Toolbar miActionBar = (Toolbar) findViewById(R.id.miActionBar);
+        setSupportActionBar(miActionBar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Button btnEstrella = (Button) findViewById(R.id.btEstrella);
+        btnEstrella.setVisibility(View.GONE);
         listaMascotas = (RecyclerView) findViewById(R.id.rvMascotas);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         listaMascotas.setLayoutManager(llm);
+
         inicializarListaMascotas();
         inicializarAdaptador();
 

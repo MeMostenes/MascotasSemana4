@@ -6,11 +6,18 @@
     android:layout_height="?attr/actionBarSize"
     android:background="@color/colorPrimary"
     android:elevation="4dp"
-    android:theme= "@style/AppTheme"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:popupTheme="@style/Theme.AppCompat.Light"
+    app:layout_scrollFlags="scroll|enterAlways"
 
 
     >
-
+    <Button
+        android:id="@+id/btEstrella"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/estrella"
+        android:layout_gravity="right"
+        android:onClick="favoritos"
+        />
 
 </android.support.v7.widget.Toolbar>
